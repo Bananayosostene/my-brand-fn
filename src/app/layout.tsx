@@ -1,11 +1,19 @@
+"use client";
 import Link from "next/link";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider"
+import { useState } from "react";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  }
   return (
     <html lang="en">
       <head>
@@ -17,17 +25,26 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
+         <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+          // theme={theme} 
+        >
         <div className="flex flex-col min-h-screen">
           <header className="bg-darkBg text-white dark:bg-gray-800 px-10 py-4 border-b border-gray-600 flex justify-between">
             <div className="flex gap-4">
             <Link href="/blog">logo</Link>
             </div>
             <div className="flex gap-10">
-            <Link href="/register">register</Link>
-            <Link href="/login">login</Link>
+            <Link href="./">Home</Link>
+            <Link href="/blog">Blog</Link>
             </div>
             <div className="flex gap-4">
-            <Link href="/forgot-password">mode</Link>
+       <button onClick={toggleTheme} className="text-white text-xl flex items-center gap-2">
+                  {theme === "light" ? <FiMoon /> : <FiSun />} 
+                </button>
             <Link href="/forgot-password">Profile</Link>
             </div>
           </header>
@@ -89,6 +106,7 @@ export default function RootLayout({
             </div>
           </footer>
         </div>
+        </ThemeProvider>
       </body>
     </html>
   );

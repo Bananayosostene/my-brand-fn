@@ -9,8 +9,8 @@ export default function Page() {
         <p className='text-center'>My Photo</p>
       </div>
       <div className='w-1/3'>
-        <Button className='mb-4' variant='secondary'>Login</Button>
-        <Button variant='secondary'>Login with google</Button>
+        <Button className='mb-4' variant='outline'>Login</Button>
+        <Button variant='outline'>Login with google</Button>
       </div>
       </div>
       
@@ -18,7 +18,7 @@ export default function Page() {
         <p className='text-center text-md'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus asperiores quas ipsam incidunt officia corrupti ab quaerat aspernatur, veritatis, quidem ad vero accusantium, totam cum modi sapiente eos illum?</p>
       </div>
       <div>
-        <Button variant='outline'>Contact me</Button>
+        <Button  variant='outline'>Contact me</Button>
       </div>
     </div>
   );

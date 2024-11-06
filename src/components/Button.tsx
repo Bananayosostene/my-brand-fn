@@ -8,7 +8,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    { children, className = '', variant = 'primary', ...props },
+    { children, className = 'text-sm ', variant = 'primary', ...props },
     ref
   ) => {
     const baseStyles =
@@ -16,12 +16,12 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variantStyles = {
       primary:
-        'bg-primary-500 text-white hover:bg-primary-600 focus-visible:ring-primary-500',
+        'bg-primary-500 text-sm  text-white hover:bg-primary-600 focus-visible:ring-primary-500',
       secondary:
         'bg-secondary-500 text-white hover:bg-secondary-600 focus-visible:ring-secondary-500',
       outline:
         'border border-primary-500 text-primary-500 hover:bg-primary-50 focus-visible:ring-primary-500',
-      text: 'text-primary-500 hover:bg-primary-50 focus-visible:ring-primary-500',
+      text: ' text-primary-500 hover:bg-primary-50 focus-visible:ring-primary-500',
     };
 
     return (

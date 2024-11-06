@@ -1,14 +1,13 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
 
-export default function page() {
+export default function Page() {
   return (
-    <div className='flex  items-center justify-center min-h-screen'>
-    <div className='font-sans border-[1px] w-1/2 p-4 bg-darkBg border-gray-600 rounded-[20px]'>
-        <p className='text-sm'> welcome to our website!</p>
-        <hr className="my-4 border-gray-600 w-full" />
-      <Link href="/blog">go to blog</Link>
+    <div className='flex items-center justify-center min-h-screen p-4'>
+      <div className='border border-gray-200 dark:border-gray-700 w-full max-w-2xl p-6 rounded-lg bg-white dark:bg-dark-bg'>
+        <p className='text-sm'>Welcome to our website!</p>
+        <hr className="my-4 border-gray-200 dark:border-gray-700" />
+        <Link href="/blog" className="text-primary hover:underline">Go to blog</Link>
+      </div>
     </div>
-    </div>
-  )
+  );
 }

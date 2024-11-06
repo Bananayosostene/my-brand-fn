@@ -4,6 +4,9 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { useTheme } from "next-themes";
 import { FiSun, FiMoon } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 
 export default function RootLayout({
   children,
@@ -43,9 +46,9 @@ function Header() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="bg-white dark:bg-dark-bg text-light-text dark:text-dark-text px-10 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between">
+    <header className="bg-white dark:bg-dark-bg text-sm text-light-text dark:text-dark-text px-10 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between">
       <div className="flex gap-4">
-        <Link href="/blog">Logo</Link>
+        <Link href="#">Logo</Link>
       </div>
       <div className="flex gap-10">
         <Link href="./">Home</Link>
@@ -66,39 +69,39 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="bg-white dark:bg-dark-bg text-light-text dark:text-dark-text p-4">
-      <div className="flex gap-10 flex-wrap border-b border-gray-200 dark:border-gray-700">
-        <div className="flex gap-4">
+    <footer className="bg-white dark:bg-dark-bg text-light-text dark:text-dark-text text-sm  p-4">
+      <div className="flex gap-[5rem] flex justify-center items-center border-b border-gray-200 dark:border-gray-700">
+        <div className="flex gap-4 items-center">
           <p>Follow me</p>
           <ul className="flex gap-4">
             <li>
               <a href="https://twitter.com/devsoso" target="_blank" rel="noopener noreferrer">
-                Instagram
+                <FaInstagram />
               </a>
             </li>
             <li>
               <a href="https://github.com/devsoso" target="_blank" rel="noopener noreferrer">
-                GitHub
+                <FaGithub />
               </a>
             </li>
             <li>
               <a href="https://devsoso.com" target="_blank" rel="noopener noreferrer">
-                LinkedIn
+                <FaLinkedin />
               </a>
             </li>
           </ul>
         </div>
         <div className="flex gap-4">
-          <p>Phone:</p>
+          <p>Phone: </p>
           <a href="tel:+250788724867">+250788724867</a>
         </div>
         <div className="flex gap-4">
-          <p>Email:</p>
+          <p>Email: </p>
           <a href="mailto:sbananayo98@gmail.com">sbananayo98@gmail.com</a>
         </div>
       </div>
       <div>
-        <p>2022 All rights reserved  - Developer sostene </p>
+        <p className="text-sm text-center mt-2 ">2022 All rights reserved  - Developer sostene </p>
        </div>
     </footer>
   );

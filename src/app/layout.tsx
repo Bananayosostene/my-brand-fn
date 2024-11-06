@@ -5,18 +5,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { useTheme } from "next-themes";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { FaGithub, FaInstagram, FaLinkedin  } from "react-icons/fa6";
-import {Poppins,Inter } from 'next/font/google'
-
-const poppins = Poppins({
-  weight: ['400', '500', '600', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const inter = Inter({ 
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 export default function RootLayout({
   children,
@@ -24,7 +12,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true} className={poppins.className}>
+    <html lang="en" suppressHydrationWarning={true}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <ThemeProvider
           attribute="class"

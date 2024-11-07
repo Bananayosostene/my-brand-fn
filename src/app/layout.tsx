@@ -55,7 +55,7 @@ function Header() {
         <Link href="#">community</Link>
         <Link href="#">SUpport</Link>
       </div>
-      <div className="flex gap-4 items-center">
+      <div className="flex gap-4 items-center ">
         <button
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           className="text-xl flex items-center gap-2"

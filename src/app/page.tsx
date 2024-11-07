@@ -4,7 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 export default function Page() {
   return (
     <div className='flex flex-col justify-center items-center'>
-    <div className='flex px-20 w-screen pt-10 gap-6 justify-center items-center'>
+    <div className='flex px-20 w-full pt-10 gap-6 justify-center items-center'>
       <div className='w-1/2 h-[20rem] rounded-lg bg-white dark:bg-dark-bg border border-gray-300 dark:border-gray-700 flex items-center justify-center'>
         <p className='text-center'>My Photo</p>
       </div>

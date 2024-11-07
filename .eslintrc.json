@@ -1,7 +1,14 @@
 {
-  "extends": "next/core-web-vitals",
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "rules": {
-    "@typescript-eslint/no-unused-vars": "warn",  // Changes error to warning
-    "@next/next/no-page-custom-font": "off"      // Disables the custom font warning
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@next/next/no-page-custom-font": "off"
   }
 }

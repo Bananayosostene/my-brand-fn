@@ -12,15 +12,15 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     const baseStyles =
-      'inline-flex items-center justify-center border border-gray-300 dark:border-gray-700 rounded-md w-[20rem] px-4 py-2 font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2';
+      'inline-flex items-center justify-center  rounded-md w-[20rem] px-4 py-2 font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2';
 
     const variantStyles = {
       primary:
-        'bg-primary-500 text-sm  text-white hover:bg-primary-600 focus-visible:ring-primary-500',
+        'bg-primary dark:bg-primary bg-primary-500 text-sm  text-white hover:bg-primary-600 focus-visible:ring-primary-500',
       secondary:
-        'bg-secondary-500 text-white hover:bg-secondary-600 focus-visible:ring-secondary-500',
+        'text-primary border border-primary hover:bg-btn-hover focus-visible:ring-secondary-500',
       outline:
-        'border border-primary-500 text-primary-500 hover:bg-primary-50 focus-visible:ring-primary-500',
+        'bg-primary border border-primary text-white hover:bg-btn-hoverBlue focus-visible:ring-primary-500',
       text: ' text-primary-500 hover:bg-primary-50 focus-visible:ring-primary-500',
     };
 

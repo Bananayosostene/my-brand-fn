@@ -4,7 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { useTheme } from "next-themes";
 import { FiSun, FiMoon } from "react-icons/fi";
-import { FaGithub, FaInstagram, FaLinkedin  } from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaLinkedin, FaHive } from "react-icons/fa6";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function RootLayout({
   children,
@@ -16,10 +17,8 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="icon" href="/hive-blockchain.svg" type="image/svg+xml" />
       </head>
       <body>
         <ThemeProvider
@@ -45,12 +44,16 @@ function Header() {
 
   return (
     <header className="bg-white dark:bg-dark-bg text-sm text-light-text dark:text-dark-text px-10 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between">
-      <div className="flex gap-4">
-        <Link href="#">Logo</Link>
-      </div>
-      <div className="flex gap-10">
+      <div className=" flex gap-10">
+        <div className="flex gap-4 justify-center items-center cursor-pointer">
+        <FaHive className="text-primary dark:text-white" />
+        <p>Dev</p>
+        </div>
+        <SectionHeader />
         <Link href="./">Home</Link>
         <Link href="/blog">Blog</Link>
+        <Link href="#">community</Link>
+        <Link href="#">SUpport</Link>
       </div>
       <div className="flex gap-4 items-center">
         <button

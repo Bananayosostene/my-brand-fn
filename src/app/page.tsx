@@ -1,4 +1,5 @@
 import Button from '@/components/Button';
+import { FcGoogle } from "react-icons/fc";
 
 export default function Page() {
   return (
@@ -8,8 +9,8 @@ export default function Page() {
         <p className='text-center'>My Photo</p>
       </div>
       <div className='w-1/3'>
-        <Button className='mb-4' variant='outline'>Login</Button>
-        <Button variant='outline'>Login with google</Button>
+        <Button className='mb-4' variant='secondary'>Login</Button>
+        <Button variant='outline'><FcGoogle /> Continue with google</Button>
       </div>
       </div>
       

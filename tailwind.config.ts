@@ -17,7 +17,9 @@ const config: Config = {
         "2xl": "24px",
       },
       colors: {
-        primary: '#8667f2',
+        primary: '#2962FF',
+        'btn-hover': '#293547',
+        'btn-hoverBlue': '#3B82F6',
         'light-bg': '#F9F9FB',
         'dark-bg': '#1F2937',
         'dark-text': '#FFFFFF',

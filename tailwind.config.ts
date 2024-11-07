@@ -23,7 +23,7 @@ const config: Config = {
         'light-bg': '#F9F9FB',
         'dark-bg': '#1F2937',
         'dark-text': '#FFFFFF',
-        'light-text': '#111827',
+        'light-text': '#27272A',
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],

@@ -9,8 +9,8 @@ export default function Page() {
         <p className='text-center'>My Photo</p>
       </div>
       <div className='w-1/3'>
-        <Button className='mb-4' variant='secondary'>Login</Button>
-        <Button variant='outline'><FcGoogle /> Continue with google</Button>
+        <Button className='mb-4' variant='primary'>Login</Button>
+        <Button variant='secondary'><FcGoogle /> Continue with google</Button>
       </div>
       </div>
       

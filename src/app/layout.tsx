@@ -43,11 +43,11 @@ function Header() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="bg-white dark:bg-dark-bg text-sm text-light-text dark:text-dark-text px-10 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between">
+    <header className="bg-white dark:bg-dark-bg text-sm text-light-text dark:text-dark-text px-10 pt-4 pb-2 border-b border-gray-200 dark:border-gray-700 flex justify-between">
       <div className=" flex gap-10">
-        <div className="flex gap-4 justify-center items-center cursor-pointer">
+        <div className="flex gap-4 justify-center items-center cursor-pointer text-2xl">
         <FaHive className="text-primary dark:text-white" />
-        <p>Dev</p>
+        <p className="font-bold">Dev</p>
         </div>
         <SectionHeader />
         <Link href="./">Home</Link>

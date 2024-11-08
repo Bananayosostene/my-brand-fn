@@ -53,7 +53,7 @@ function Header() {
         <Link href="./">Home</Link>
         <Link href="/blog">Blog</Link>
         <Link href="#">community</Link>
-        <Link href="#">SUpport</Link>
+        <Link href="#">Support</Link>
       </div>
       <div className="flex gap-4 items-center ">
         <button

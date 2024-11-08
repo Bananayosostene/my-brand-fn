@@ -3,7 +3,7 @@ import React, { forwardRef, ReactNode } from 'react';
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   className?: string;
-  variant?: 'primary' | 'secondary' | 'outline' | 'text';
+  variant?: 'primary' | 'secondary' | 'outline'| 'signUp' | 'text';
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -21,6 +21,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         'text-primary border border-primary  px-4 py-2 rounded-md w-[20rem] hover:bg-btn-hover focus-visible:ring-secondary-500',
       outline:
         ' border-2 border-primary text-light-text  dark:text-dark-text rounded-md px-5 py-1 skew-x-[-20deg]',
+      signUp:
+        ' border-2 border-primary  text-light-text  dark:text-dark-text rounded-full h-[2.5rem] px-5',
       text: ' text-primary-500 hover:bg-primary-50 focus-visible:ring-primary-500',
     };
 

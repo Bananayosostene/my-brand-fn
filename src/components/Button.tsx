@@ -21,6 +21,11 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         'text-primary border border-primary  px-4 py-2 rounded-md w-[20rem] hover:bg-btn-hover focus-visible:ring-secondary-500',
       outline:
         ' border-2 border-primary text-light-text  dark:text-dark-text rounded-md px-5 py-1 skew-x-[-20deg]',
+<<<<<<< Updated upstream
+=======
+      signUp:
+        'relative border border-gray-300 dark:border-gray-700  text-gray-500  dark:text-gray-400 rounded-full h-[2.5rem] px-5 overflow-hidden transition-colors duration-300 ease-in-out hover:bg-dark-btn-hover dark:hover:bg-btn-hover focus-visible:ring-secondary-500',
+>>>>>>> Stashed changes
       text: ' text-primary-500 hover:bg-primary-50 focus-visible:ring-primary-500',
     };
 

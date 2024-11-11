@@ -35,7 +35,11 @@ export default function Page() {
       <div className='px-20 py-10'>
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <p className='text-center text-md'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus asperiores quas ipsam incidunt officia corrupti ab quaerat aspernatur, veritatis, quidem ad vero accusantium, totam cum modi sapiente eos illum?</p>
+=======
+        <p className='text-center text-md text-gray-500 dark:text-gray-400'>Lorem, ipsum dolor sit  consectetur adipisicing elit. Corporis repellendus asperiores quas ipsam incidunt officia corrupti ab quaerat aspernatur, veritatis, quidem ad vero accusantium, totam cum modi sapiente eos illum?</p>
+>>>>>>> Stashed changes
 =======
         <p className='text-center text-md text-gray-500 dark:text-gray-400'>Lorem, ipsum dolor sit  consectetur adipisicing elit. Corporis repellendus asperiores quas ipsam incidunt officia corrupti ab quaerat aspernatur, veritatis, quidem ad vero accusantium, totam cum modi sapiente eos illum?</p>
 >>>>>>> Stashed changes

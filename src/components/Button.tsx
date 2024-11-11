@@ -26,6 +26,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       signUp:
         'relative border border-gray-300 dark:border-gray-700  text-gray-500  dark:text-gray-400 rounded-full h-[2.5rem] px-5 overflow-hidden transition-colors duration-300 ease-in-out hover:bg-dark-btn-hover dark:hover:bg-btn-hover focus-visible:ring-secondary-500',
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

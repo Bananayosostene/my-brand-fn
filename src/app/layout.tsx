@@ -54,7 +54,7 @@ function Header() {
         <Link href="./">Home</Link>
         <Link href="/blog">Blog</Link>
         <Link href="#">community</Link>
-        <Link href="#">SUpport</Link>
+        <Link href="#">Support</Link>
       </div>
       <div className="flex gap-4 items-center ">
         <div className="flex items-center gap-2 border border-gray-200 dark:border-gray-700 px-8 py-2 rounded-full">

@@ -19,6 +19,7 @@ const config: Config = {
       colors: {
         primary: '#2962FF',
         'btn-hover': '#293547',
+        'dark-btn-hover': '#F4F4F5',
         'btn-hoverBlue': '#3B82F6',
         'light-bg': '#F9F9FB',
         'dark-bg': '#1F2937',

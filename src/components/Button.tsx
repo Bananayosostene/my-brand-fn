@@ -22,7 +22,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       outline:
         ' border-2 border-primary text-light-text  dark:text-dark-text rounded-md px-5 py-1 skew-x-[-20deg]',
       signUp:
-        ' border-2 border-primary  text-light-text  dark:text-dark-text rounded-full h-[2.5rem] px-5',
+        'relative border border-gray-300 dark:border-gray-700  text-gray-500  dark:text-gray-400 rounded-full h-[2.5rem] px-5 overflow-hidden transition-colors duration-300 ease-in-out hover:bg-dark-btn-hover dark:hover:bg-btn-hover focus-visible:ring-secondary-500',
       text: ' text-primary-500 hover:bg-primary-50 focus-visible:ring-primary-500',
     };
 

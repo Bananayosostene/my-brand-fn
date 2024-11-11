@@ -3,9 +3,10 @@ import Link from "next/link";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { useTheme } from "next-themes";
-import { FiSun, FiMoon } from "react-icons/fi";
+import { FiSun, FiMoon} from "react-icons/fi";
 import { FaGithub, FaInstagram, FaLinkedin, FaHive } from "react-icons/fa6";
 import SectionHeader from "@/components/SectionHeader";
+import { CiSearch } from "react-icons/ci";
 
 export default function RootLayout({
   children,
@@ -43,11 +44,11 @@ function Header() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="bg-white dark:bg-dark-bg text-sm text-light-text dark:text-dark-text px-10 pt-4 pb-2 border-b border-gray-200 dark:border-gray-700 flex justify-between">
-      <div className=" flex gap-10">
+    <header className="bg-white dark:bg-dark-bg text-sm text-light-text dark:text-dark-text px-10 py-2 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
+      <div className=" flex gap-10 justify-center items-center">
         <div className="flex gap-4 justify-center items-center cursor-pointer text-2xl">
-        <FaHive className="text-primary dark:text-white" />
-        <p className="font-bold">Dev</p>
+        <FaHive className="text-primary" />
+        <p className="font-bold ">Dev</p>
         </div>
         <SectionHeader />
         <Link href="./">Home</Link>
@@ -56,13 +57,16 @@ function Header() {
         <Link href="#">Support</Link>
       </div>
       <div className="flex gap-4 items-center ">
+        <div className="flex items-center gap-2 border border-gray-200 dark:border-gray-700 px-8 py-2 rounded-full">
+          <CiSearch /> <p className="text-sm text-gray-500">Search</p>
+        </div>
         <button
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           className="text-xl flex items-center gap-2"
         >
           {theme === 'dark' ? <FiSun /> : <FiMoon />}
         </button>
-        <Link href="/profile">Profile</Link>
+        {/* <Link href="/profile">Profile</Link> */}
       </div>
     </header>
   );

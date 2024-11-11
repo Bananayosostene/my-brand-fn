@@ -14,7 +14,7 @@ export default function Page() {
                 <p>BS</p>
             </div>
             <div className='flex flex-col justify-center ml-4'>
-              <h1 className='font-bold text-lg'>BANANAYO Sostene</h1>
+              <h1 className='font-bold text-lg text-primary'>BANANAYO Sostene</h1>
               <p className='text-[12px] text-gray-500 dark:text-gray-400'>Software Developer</p>
             </div>
             <div className='flex ml-auto'>
@@ -27,8 +27,7 @@ export default function Page() {
       </div>
       
       <div className='px-20 py-10'>
-        <h1 className='text-2xl font-bold text-center'>FULLSTACKER SOFTWARE DEVELOPER</h1>
-        <p className='text-center text-md'>Lorem, ipsum dolor sit  consectetur adipisicing elit. Corporis repellendus asperiores quas ipsam incidunt officia corrupti ab quaerat aspernatur, veritatis, quidem ad vero accusantium, totam cum modi sapiente eos illum?</p>
+        <p className='text-center text-md text-gray-500 dark:text-gray-400'>Lorem, ipsum dolor sit  consectetur adipisicing elit. Corporis repellendus asperiores quas ipsam incidunt officia corrupti ab quaerat aspernatur, veritatis, quidem ad vero accusantium, totam cum modi sapiente eos illum?</p>
       </div>
       <div>
         <Button  variant='outline'>Contact me</Button>
